@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ScatterChartIDb4c330319eb</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- ScatterChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue May 24 16:37:01 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataScatterChartIDb4c330319eb () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ 58,
+115 
+],
+[
+ 59,
+117 
+],
+[
+ 60,
+120 
+],
+[
+ 61,
+123 
+],
+[
+ 62,
+126 
+],
+[
+ 63,
+129 
+],
+[
+ 64,
+132 
+],
+[
+ 65,
+135 
+],
+[
+ 66,
+139 
+],
+[
+ 67,
+142 
+],
+[
+ 68,
+146 
+],
+[
+ 69,
+150 
+],
+[
+ 70,
+154 
+],
+[
+ 71,
+159 
+],
+[
+ 72,
+164 
+] 
+];
+data.addColumn('number','height');
+data.addColumn('number','weight');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartScatterChartIDb4c330319eb() {
+var data = gvisDataScatterChartIDb4c330319eb();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Correlation between Height and Weight";
+options["trendlines"] = "linear";
+options["pointSize"] =     20;
+options["pointShape"] = {type: 'star', sides: '4', dent: '0.2'};
+options["vAxis"] = {title:'weight (lbs)'};
+options["crosshair"] = { trigger: 'both' };
+options["hAxis"] = {title:'height (in)'};
+options["width"] =    500;
+options["height"] =    400;
+
+
+    chartScatterChartIDb4c330319eb = new google.visualization.ChartWrapper({
+    dataTable: data,       
+    chartType: 'ScatterChart',
+    containerId: 'ScatterChartIDb4c330319eb',
+    options: options
+    });
+    chartScatterChartIDb4c330319eb.draw();
+    
+
+}
+
+  function openEditorScatterChartIDb4c330319eb() {
+  var editor = new google.visualization.ChartEditor();
+  google.visualization.events.addListener(editor, 'ok',
+  function() { 
+  chartScatterChartIDb4c330319eb = editor.getChartWrapper();  
+  chartScatterChartIDb4c330319eb.draw(document.getElementById('ScatterChartIDb4c330319eb')); 
+  }); 
+  editor.openDialog(chartScatterChartIDb4c330319eb);
+  }
+    
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "charteditor";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartScatterChartIDb4c330319eb);
+})();
+function displayChartScatterChartIDb4c330319eb() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartIDb4c330319eb"></script>
+ 
+<!-- divChart -->
+<input type='button' onclick='openEditorScatterChartIDb4c330319eb()' value='other charts'/>  
+<div id="ScatterChartIDb4c330319eb" 
+  style="width: 500; height: 400;">
+</div>
+ <div><span>Data: women &#8226; Chart ID: <a href="Chart_ScatterChartIDb4c330319eb.html">ScatterChartIDb4c330319eb</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.3 (2015-12-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
