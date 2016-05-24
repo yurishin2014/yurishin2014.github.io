@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MapIDb4c36be36f1</title>
+<meta http-equiv="content-type" content="text/html;charset=euc-kr" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- Map generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue May 24 17:14:08 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMapIDb4c36be36f1 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ 37.566535,
+126.9779692,
+"서울특별시" 
+],
+[
+ 35.1795543,
+129.0756416,
+"부산광역시" 
+],
+[
+ 35.8714354,
+128.601445,
+"대구광역시" 
+],
+[
+ 37.4562557,
+126.7052062,
+"인천광역시" 
+],
+[
+ 35.1595454,
+126.8526012,
+"광주광역시" 
+],
+[
+ 36.3504119,
+127.3845475,
+"대전광역시" 
+],
+[
+ 35.5383773,
+129.3113596,
+"울산광역시" 
+],
+[
+ 36.5163355,
+127.337575,
+"세종특별자치시" 
+],
+[
+ 37.4138,
+127.5183,
+"경기도" 
+],
+[
+ 37.8228,
+128.1555,
+"강원도" 
+],
+[
+ 36.8,
+127.7,
+"충청북도" 
+],
+[
+ 36.5184,
+126.8,
+"충청남도" 
+],
+[
+ 35.7175,
+127.153,
+"전라북도" 
+],
+[
+ 34.8679,
+126.991,
+"전라남도" 
+],
+[
+ 36.4919,
+128.8889,
+"경상북도" 
+],
+[
+ 35.4606,
+128.2132,
+"경상남도" 
+],
+[
+ 33.4890113,
+126.4983023,
+"제주특별자치도" 
+] 
+];
+data.addColumn('number','Latitude');
+data.addColumn('number','Longitude');
+data.addColumn('string','admname');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMapIDb4c36be36f1() {
+var data = gvisDataMapIDb4c36be36f1();
+var options = {};
+options["showTip"] = true;
+options["enableScrollWheel"] = true;
+options["mapType"] = "terrain";
+options["useMapTypeControl"] = true;
+options["width"] =    900;
+options["height"] =    900;
+
+
+    var chart = new google.visualization.Map(
+    document.getElementById('MapIDb4c36be36f1')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "map";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMapIDb4c36be36f1);
+})();
+function displayChartMapIDb4c36be36f1() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMapIDb4c36be36f1"></script>
+ 
+<!-- divChart -->
+  
+<div id="MapIDb4c36be36f1" 
+  style="width: 900; height: 900;">
+</div>
+ <div><span>Data: sido.latlon &#8226; Chart ID: <a href="Chart_MapIDb4c36be36f1.html">MapIDb4c36be36f1</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.3 (2015-12-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/map">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
