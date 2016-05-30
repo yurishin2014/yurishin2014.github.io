@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MergedIDc3c6387564</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- PieChart generated in R 3.2.5 by googleVis 0.5.10 package -->
+<!-- Mon May 30 22:26:31 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataPieChartIDc3cb644c4c () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "AGO",
+201.6744 
+],
+[
+ "ALB",
+798.3263 
+],
+[
+ "ARG",
+6953.7885 
+],
+[
+ "AUS",
+16991.95 
+],
+[
+ "AUT",
+22712.1322 
+],
+[
+ "AZE",
+382.6932 
+] 
+];
+data.addColumn('string','country');
+data.addColumn('number','income');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataPieChartIDc3c4bb48b8 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "AGO",
+14187710 
+],
+[
+ "ALB",
+3128530 
+],
+[
+ "ARG",
+36241578 
+],
+[
+ "AUS",
+18711000 
+],
+[
+ "AUT",
+7976789 
+],
+[
+ "AZE",
+7913000 
+],
+[
+ "BDI",
+6511920 
+],
+[
+ "BEN",
+6546493 
+],
+[
+ "BFA",
+10969093 
+],
+[
+ "BGD",
+126169583 
+] 
+];
+data.addColumn('string','code');
+data.addColumn('number','pop');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartPieChartIDc3cb644c4c() {
+var data = gvisDataPieChartIDc3cb644c4c();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Income of Country";
+options["pieHole"] =    0.3;
+options["width"] =    700;
+options["height"] =    700;
+options["slices"] = {4:{offset:0.1}};
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartIDc3cb644c4c')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartPieChartIDc3c4bb48b8() {
+var data = gvisDataPieChartIDc3c4bb48b8();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Population of Country";
+options["pieHole"] =    0.5;
+options["width"] =    700;
+options["height"] =    700;
+options["slices"] = {9:{offset:0.1},2:{offset:0.1}};
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartIDc3c4bb48b8')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartIDc3cb644c4c);
+})();
+function displayChartPieChartIDc3cb644c4c() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartIDc3c4bb48b8);
+})();
+function displayChartPieChartIDc3c4bb48b8() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDc3cb644c4c"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDc3c4bb48b8"></script>
+ 
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+  
+<div id="PieChartIDc3cb644c4c" 
+  style="width: 700; height: 700;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="PieChartIDc3c4bb48b8" 
+  style="width: 700; height: 700;">
+</div>
+
+</td>
+</tr>
+</table>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedIDc3c6387564.html">MergedIDc3c6387564</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.5 (2016-04-14) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; Data Policy: See individual charts
+</span></div>
+</body>
+</html>
