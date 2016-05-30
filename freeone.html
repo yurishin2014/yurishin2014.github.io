@@ -1,1 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MergedIDc3c16943f88</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- ComboChart generated in R 3.2.5 by googleVis 0.5.10 package -->
+<!-- Mon May 30 23:11:49 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataComboChartIDc3c34223e62 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Afghanistan",
+60.02826829,
+637.0379443 
+],
+[
+ "Angola",
+51.86617073,
+3675.787412 
+],
+[
+ "Albania",
+77.64046341,
+3738.689799 
+],
+[
+ "United Arab Emirates",
+77.19563415,
+32507.0721 
+],
+[
+ "Argentina",
+75.98609756,
+12463.29847 
+],
+[
+ "Armenia",
+74.56136585,
+3380.962145 
+] 
+];
+data.addColumn('string','Country.Name');
+data.addColumn('number','lifeExp');
+data.addColumn('number','Income');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataTableIDc3c3e3979da () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "AFG",
+"Afghanistan",
+60.02826829,
+637.0379443,
+30682500 
+],
+[
+ "AGO",
+"Angola",
+51.86617073,
+3675.787412,
+23448202 
+],
+[
+ "ALB",
+"Albania",
+77.64046341,
+3738.689799,
+2897366 
+],
+[
+ "ARE",
+"United Arab Emirates",
+77.19563415,
+32507.0721,
+9039978 
+],
+[
+ "ARG",
+"Argentina",
+75.98609756,
+12463.29847,
+42538304 
+],
+[
+ "ARM",
+"Armenia",
+74.56136585,
+3380.962145,
+2992192 
+] 
+];
+data.addColumn('string','Country.Code');
+data.addColumn('string','Country.Name');
+data.addColumn('number','lifeExp');
+data.addColumn('number','Income');
+data.addColumn('number','Population');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartComboChartIDc3c34223e62() {
+var data = gvisDataComboChartIDc3c34223e62();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "lifeExp and Income";
+options["titleTextStyle"] = {color:'green', fontName:'Courier', fontSize:25};
+options["curveType"] = "function";
+options["pointSize"] =     15;
+options["pointShape"] = "star";
+options["seriesType"] = "bars";
+options["series"] = [
+    {type: 'bars',
+    targetAxisIndex: 0},
+    {type: 'line',
+    targetAxisIndex: 1} 
+    ];
+options["hAxis"] = {title: 'Country'};
+options["vAxes"] = [
+    {title: 'lifeExp'}, 
+    {title: 'Income', 
+    textStyle: {color: '#EB53D7'}, 
+    maxValue: '1'}
+    ];
+options["width"] =    750;
+options["height"] =    600;
+
+
+    chartComboChartIDc3c34223e62 = new google.visualization.ChartWrapper({
+    dataTable: data,       
+    chartType: 'ComboChart',
+    containerId: 'ComboChartIDc3c34223e62',
+    options: options
+    });
+    chartComboChartIDc3c34223e62.draw();
+    
+
+}
+
+  function openEditorComboChartIDc3c34223e62() {
+  var editor = new google.visualization.ChartEditor();
+  google.visualization.events.addListener(editor, 'ok',
+  function() { 
+  chartComboChartIDc3c34223e62 = editor.getChartWrapper();  
+  chartComboChartIDc3c34223e62.draw(document.getElementById('ComboChartIDc3c34223e62')); 
+  }); 
+  editor.openDialog(chartComboChartIDc3c34223e62);
+  }
+    
+
+
+// jsDrawChart
+function drawChartTableIDc3c3e3979da() {
+var data = gvisDataTableIDc3c3e3979da();
+var options = {};
+options["allowHtml"] = true;
+options["page"] = "enable";
+
+
+    var chart = new google.visualization.Table(
+    document.getElementById('TableIDc3c3e3979da')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "charteditor";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartComboChartIDc3c34223e62);
+})();
+function displayChartComboChartIDc3c34223e62() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "table";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTableIDc3c3e3979da);
+})();
+function displayChartTableIDc3c3e3979da() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartComboChartIDc3c34223e62"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTableIDc3c3e3979da"></script>
+ 
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+<input type='button' onclick='openEditorComboChartIDc3c34223e62()' value='Other Chart choice'/>  
+<div id="ComboChartIDc3c34223e62" 
+  style="width: 750; height: 600;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="TableIDc3c3e3979da" 
+  style="width: automatic; height: automatic;">
+</div>
+
+</td>
+</tr>
+</table>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedIDc3c16943f88.html">MergedIDc3c16943f88</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.5 (2016-04-14) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; Data Policy: See individual charts
+</span></div>
+</body>
+</html>
 
