@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BubbleChartIDc3c48472609</title>
+<title>BubbleChartID1a804a2a5494</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- BubbleChart generated in R 3.2.5 by googleVis 0.5.10 package -->
-<!-- Mon May 30 17:56:50 2016 -->
+<!-- Mon Jun 06 16:51:51 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartIDc3c48472609 () {
+function gvisDataBubbleChartID1a804a2a5494 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1188,34 +1188,36 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartIDc3c48472609() {
-var data = gvisDataBubbleChartIDc3c48472609();
+function drawChartBubbleChartID1a804a2a5494() {
+var data = gvisDataBubbleChartID1a804a2a5494();
 var options = {};
+options["title"] = "Correlation of X and Income";
+options["titleTextStyle"] = {fontSize:25};
 options["width"] =   1000;
 options["height"] =    850;
-options["hAxis"] = {minValue:1, maxValue:270};
-options["vAxis"] = {minValue:170, maxValue:79000};
+options["hAxis"] = {title:'X', minValue:1, maxValue:270};
+options["vAxis"] = {title:'Income', minValue:170, maxValue:79000};
 
 
-    chartBubbleChartIDc3c48472609 = new google.visualization.ChartWrapper({
+    chartBubbleChartID1a804a2a5494 = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'BubbleChart',
-    containerId: 'BubbleChartIDc3c48472609',
+    containerId: 'BubbleChartID1a804a2a5494',
     options: options
     });
-    chartBubbleChartIDc3c48472609.draw();
+    chartBubbleChartID1a804a2a5494.draw();
     
 
 }
 
-  function openEditorBubbleChartIDc3c48472609() {
+  function openEditorBubbleChartID1a804a2a5494() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartBubbleChartIDc3c48472609 = editor.getChartWrapper();  
-  chartBubbleChartIDc3c48472609.draw(document.getElementById('BubbleChartIDc3c48472609')); 
+  chartBubbleChartID1a804a2a5494 = editor.getChartWrapper();  
+  chartBubbleChartID1a804a2a5494.draw(document.getElementById('BubbleChartID1a804a2a5494')); 
   }); 
-  editor.openDialog(chartBubbleChartIDc3c48472609);
+  editor.openDialog(chartBubbleChartID1a804a2a5494);
   }
     
  
@@ -1235,9 +1237,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartIDc3c48472609);
+callbacks.push(drawChartBubbleChartID1a804a2a5494);
 })();
-function displayChartBubbleChartIDc3c48472609() {
+function displayChartBubbleChartID1a804a2a5494() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1261,14 +1263,14 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartIDc3c48472609"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID1a804a2a5494"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorBubbleChartIDc3c48472609()' value='other charts'/>  
-<div id="BubbleChartIDc3c48472609" 
+<input type='button' onclick='openEditorBubbleChartID1a804a2a5494()' value='other charts'/>  
+<div id="BubbleChartID1a804a2a5494" 
   style="width: 1000; height: 850;">
 </div>
- <div><span>Data: wid &#8226; Chart ID: <a href="Chart_BubbleChartIDc3c48472609.html">BubbleChartIDc3c48472609</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: wid &#8226; Chart ID: <a href="Chart_BubbleChartID1a804a2a5494.html">BubbleChartID1a804a2a5494</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.5 (2016-04-14) 
