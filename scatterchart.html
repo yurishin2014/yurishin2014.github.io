@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartIDc3cdf8420c</title>
+<title>ScatterChartID1a801bb617de</title>
 <meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.5 by googleVis 0.5.10 package -->
-<!-- Mon May 30 23:06:42 2016 -->
+<!-- Mon Jun 06 17:16:35 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartIDc3cdf8420c () {
+function gvisDataScatterChartID1a801bb617de () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -693,41 +693,41 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartIDc3cdf8420c() {
-var data = gvisDataScatterChartIDc3cdf8420c();
+function drawChartScatterChartID1a801bb617de() {
+var data = gvisDataScatterChartID1a801bb617de();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =    950;
 options["height"] =    650;
-options["title"] = "소득과 기대수명";
+options["title"] = "소득과 기대수명의 상관관계";
 options["pointSize"] =      9;
 options["pointShape"] = "star";
-options["vAxis"] = {title:'기대수명'};
+options["vAxis"] = {title:'소득'};
 options["crosshair"] = { trigger: 'both' };
-options["hAxis"] = {title:'소득'};
+options["hAxis"] = {title:'기대수명'};
 options["trendlines"] = "linear";
 options["colors"] = ['#FF7171'];
 
 
-    chartScatterChartIDc3cdf8420c = new google.visualization.ChartWrapper({
+    chartScatterChartID1a801bb617de = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'ScatterChart',
-    containerId: 'ScatterChartIDc3cdf8420c',
+    containerId: 'ScatterChartID1a801bb617de',
     options: options
     });
-    chartScatterChartIDc3cdf8420c.draw();
+    chartScatterChartID1a801bb617de.draw();
     
 
 }
 
-  function openEditorScatterChartIDc3cdf8420c() {
+  function openEditorScatterChartID1a801bb617de() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartScatterChartIDc3cdf8420c = editor.getChartWrapper();  
-  chartScatterChartIDc3cdf8420c.draw(document.getElementById('ScatterChartIDc3cdf8420c')); 
+  chartScatterChartID1a801bb617de = editor.getChartWrapper();  
+  chartScatterChartID1a801bb617de.draw(document.getElementById('ScatterChartID1a801bb617de')); 
   }); 
-  editor.openDialog(chartScatterChartIDc3cdf8420c);
+  editor.openDialog(chartScatterChartID1a801bb617de);
   }
     
  
@@ -747,9 +747,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartIDc3cdf8420c);
+callbacks.push(drawChartScatterChartID1a801bb617de);
 })();
-function displayChartScatterChartIDc3cdf8420c() {
+function displayChartScatterChartID1a801bb617de() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -773,22 +773,24 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartIDc3cdf8420c"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID1a801bb617de"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorScatterChartIDc3cdf8420c()' value='다른 차트 선택'/>  
-<div id="ScatterChartIDc3cdf8420c" 
+<input type='button' onclick='openEditorScatterChartID1a801bb617de()' value='다른 차트 선택'/>  
+<div id="ScatterChartID1a801bb617de" 
   style="width: 950; height: 650;">
 </div>
-<div>
-  <p>이 Scatter Chart는 소득이 증가할수록 기대수명도 높아지는 것을 나타냅니다.</p>
-</div>
-<br><br><br><br><br>
- <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartIDc3cdf8420c.html">ScatterChartIDc3cdf8420c</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartID1a801bb617de.html">ScatterChartID1a801bb617de</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.5 (2016-04-14) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
+<p></p>
+<div>이 Scatter chart에서 소득과 기대수명의 상관관계는
+  <p>'기대수명이 늘어날수록 소득도 높게 나타난다' 이다.</p>
+  <p>기대수명이 길다는 것은 사회시스템이 잘 갖춰져 있다는 것이므로</p>
+  <p>소득도 높은 것으로 추론할 수 있다.</p>
+</div>
 </body>
 </html>
